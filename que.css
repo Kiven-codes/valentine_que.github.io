@@ -1,0 +1,198 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffebcd;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    background-color: #fff0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.question {
+    font-size: 24px;
+    color: #ff1493;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.answer {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff69b4;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: #d3d3d3;
+}
+
+.message-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    background-color: #fff0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.message {
+    font-size: 20px;
+    color: #32cd32;
+    text-align: center;
+    font-weight: 600;
+}
+
+.message img {
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.heart1,
+.heart2,
+.heart3,
+.heart4,
+.heart5,
+.heart6,
+.heart7,
+.heart8,
+.heart9,
+.heart10,
+.heart11,
+.heart12 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('heart.gif') no-repeat center center;
+    background-size: cover;
+    animation: glitter 5s infinite;
+}
+
+.heart1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.heart2 {
+    top: 20%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.heart3 {
+    top: 30%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+.heart4 {
+    top: 40%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.heart5 {
+    top: 50%;
+    left: 30%;
+    animation-delay: 4s;
+}
+
+.heart6 {
+    top: 60%;
+    left: 60%;
+    animation-delay: 5s;
+}
+
+.heart7 {
+    top: 70%;
+    left: 20%;
+    animation-delay: 6s;
+}
+
+.heart8 {
+    top: 80%;
+    left: 50%;
+    animation-delay: 7s;
+}
+
+.heart9 {
+    top: 90%;
+    left: 40%;
+    animation-delay: 8s;
+}
+
+.heart10 {
+    top: 10%;
+    left: 60%;
+    animation-delay: 9s;
+}
+
+.heart11 {
+    top: 50%;
+    left: 10%;
+    animation-delay: 10s;
+}
+
+.heart12 {
+    top: 80%;
+    left: 70%;
+    animation-delay: 11s;
+}
+
+@keyframes glitter {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
