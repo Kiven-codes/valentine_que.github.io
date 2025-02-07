@@ -5,5 +5,12 @@ document.getElementById('yes').addEventListener('click', function () {
 });
 
 document.getElementById('no').addEventListener('click', function () {
-    document.getElementById('message').innerHTML = "Oh no! Maybe next time. <br><img src='https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif' alt='Sad GIF'>";
+    document.getElementById('message').innerHTML = "Pleaseeeeeee. <br><img src='mochi-mochimons.gif' alt='Sad GIF'>";
+    document.getElementById('question-container').style.display = 'none';
+    document.getElementById('answer').style.display = 'none';
+});
+
+window.addEventListener('load', function () {
+    var audio = document.getElementById('background-music');
+    audio.play();
 });
